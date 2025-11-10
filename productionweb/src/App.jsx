@@ -5,7 +5,16 @@ import './index.css'
 import Navbar from './components/Navbar'
 import Hero from './hero.jsx'
 import About from './components/about.jsx'
+import PhotoGrid from './components/photogrid.jsx'
+import cam from './assets/images/sound control.jpg'
+import camera from './assets/images/camera.jpg'
+import light from './assets/images/light.jpg'
+import production from './assets/images/production.jpg'
+import stage from './assets/images/stage.jpg'
+import sound from './assets/images/sound.jpg'
 
+
+const images = [cam, camera, light, production, stage, sound];
 
 function App() {
   return (
@@ -13,6 +22,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+       <PhotoGrid images={images} />
 
       <main className="p-8">
         
