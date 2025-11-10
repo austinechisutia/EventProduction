@@ -1,4 +1,7 @@
 import React from 'react';
+import Camera from './assets/images/cam.png';
+
+
 
 export default function HeroSection() {
   return (
@@ -25,10 +28,20 @@ export default function HeroSection() {
               </div>
 
               {/* Heading */}
-              <h1 className="text-5xl lg:text-6xl font-poppins leading-tight text-slate-900">
+              <h1 className="text-xl lg:text-6xl font-poppins leading-tight text-slate-900">
                Production <br/> and support <br/> for your event
               </h1>
 
+
+                <div className="flex flex-row">
+                {/* Description */}
+               <div className='w-10 h-10 bg-black rounded-full text-slate-900'></div>
+               <div className='w-50 h-10 bg-black rounded-full text-slate-900 flex items-center justify-center'>
+                <p className="text-sm text-white">
+                  Make your event happen
+                </p>
+               </div>
+                </div>
              
             </div>
 
@@ -39,15 +52,13 @@ export default function HeroSection() {
               <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
               
               {/* Main Image Container */}
-              <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
-                <img 
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop" 
-                  alt="Team collaboration" 
-                  className="w-full h-full object-cover"
-                />
-                
-               
-              </div>
+            <div className="relative overflow-hidden border-slate-400">
+  <img 
+    src={Camera} 
+    alt="Team collaboration" 
+    className="w-full h-auto max-h-[120vh] object-cover shadow-2xl scale-105 transition-transform duration-300 hover:scale-110"
+  />
+</div>
             </div>
 
           </div>
