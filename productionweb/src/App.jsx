@@ -18,7 +18,7 @@ const images = [cam, camera, light, production, stage, sound];
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-[#EBFFE2]">
       <Navbar />
       <Hero />
       <About />
