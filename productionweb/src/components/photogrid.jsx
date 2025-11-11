@@ -4,7 +4,7 @@ import React from "react";
 const PhotoGrid = ({ images }) => {
   return (
     <>
-   <div className="w-full overflow-x-auto py-6">
+   <div className="w-full overflow-x-auto px-6 py-6">
         <div
           className="
             grid grid-flow-col 

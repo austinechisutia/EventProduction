@@ -13,18 +13,20 @@ import production from './assets/images/production.jpg'
 import stage from './assets/images/stage.jpg'
 import sound from './assets/images/sound.jpg'
 import Solutions from './components/solutions.jsx'  
+import Choose from './components/choose.jsx'
 
 
 const images = [cam, camera, light, production, stage, sound];
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 ">
       <Navbar />
       <Hero />
       <About />
        <PhotoGrid images={images} />
       <Solutions />
+      <Choose />
 
       <main className="p-8">
         
