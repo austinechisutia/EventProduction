@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#EBFFE2] shadow-lg">
+    <nav className="bg-gray-100 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           
@@ -29,7 +29,7 @@ const Navbar = () => {
             {/* Contact as a button */}
             <a
               href="#contact"
-              className="px-4 py-2 bg-black text-white rounded-4xl hover:bg-gray-800 transition-colors"
+              className="px-4 py-2 bg-white text-black rounded-4xl hover:bg-gray-800 transition-colors"
             >
               Contact
             </a>
